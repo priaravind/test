@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+  <parameter name ="name" value= "Harshitha"/>
+  <groups>  <!-- if groups is given then BC, AC, BM and AM will not execute , hence we need to use beforesuite and after suite in the program -->
+  	<run>
+  		<include name="Regression">  <!-- As per the grouping parameter @test will be executed eg: if regression is given then only @test with Regression will be called , if SIT is given then both @ test will be called -->
+  		</include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="testngdemo.grpin"/>  <!-- class name= "packagename.classname" --> <!-- if groups tag is not given then all BC, BM, AC and AM will be called as in the program -->
+      
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
