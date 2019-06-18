@@ -5,7 +5,7 @@
   <parameter name ="name" value= "Harshitha"/>
   <groups>  <!-- if groups is given then BC, AC, BM and AM will not execute , hence we need to use beforesuite and after suite in the program -->
   	<run>
-  		<include name="Regression">  <!-- As per the grouping parameter @test will be executed eg: if regression is given then only @test with Regression will be called , if SIT is given then both @ test will be called -->
+  		<include name="SIT">  <!-- As per the grouping parameter @test will be executed eg: if regression is given then only @test with Regression will be called , if SIT is given then both @ test will be called -->
   		</include>
   	</run>
   </groups>
